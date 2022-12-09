@@ -1,0 +1,5 @@
+2022-12-09 09:11:23:1123 [31merror[39m: [31mbad auth : Authentication failed.[39m
+2022-12-09 09:11:32:1132 [31merror[39m: [31mbad auth : Authentication failed.[39m
+2022-12-09 09:17:55:1755 [31merror[39m: [31msecretOrPrivateKey must have a value[39m
+2022-12-09 09:17:59:1759 [31merror[39m: [31msecretOrPrivateKey must have a value[39m
+2022-12-09 09:21:04:214 [31merror[39m: [31mTodo validation failed: subject: Path `subject` is required.[39m
