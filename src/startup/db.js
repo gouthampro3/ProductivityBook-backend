@@ -5,7 +5,7 @@ const debug = require('debug')('app:dev');
 
 mongoose.set('strictQuery', true);
 module.exports = function(app){
-    mongoose.connect(config.get('db.host'), {
+    mongoose.connect(config.get('db.remotehost'), {
         useUnifiedTopology: true,
         useNewUrlParser: true
       })
