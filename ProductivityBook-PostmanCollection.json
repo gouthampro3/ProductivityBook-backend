@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "1fc8cd06-2ab9-4869-88f1-9dda3284f094",
+		"name": "ProductivityBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21456685"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Todos",
+					"item": [
+						{
+							"name": "CreateTodo",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"subject\":\"Finish Report\",\r\n    \"description\":\"Eloborate Todo\",\r\n    \"due\":\"12/09/2022\",\r\n    \"sharedWith\": [{\"userid\":\"63985a5324a6dee7dd1a1da3\", \"status\":\"created\"}]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3003/api/todos",
+									"host": [
+										"localhost"
+									],
+									"port": "3003",
+									"path": [
+										"api",
+										"todos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateTodo",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "GetTodo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3003/api/todos",
+									"host": [
+										"localhost"
+									],
+									"port": "3003",
+									"path": [
+										"api",
+										"todos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteTodo",
+							"request": {
+								"method": "DELETE",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SignUP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"Goutham\",\r\n    \"lastname\":\"Yadavalli\",\r\n    \"email\":\"gouthamproc@gmail.com\",\r\n    \"password\":\"hellohello\",\r\n    \"confirmPassword\":\"hellohello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"gouthamproc@gmail.com\",\r\n    \"password\":\"hellohello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzkzNTE4MDQyMDk4MWEwYjRlMjg0NjkiLCJlbWFpbCI6ImdvdXRoYW1wcm9jQGdtYWlsLmNvbSIsImlhdCI6MTY3MDYwNDkwOX0.bdN0b4G7vGc1MZ3Tnwf64yxezx6UCVqgoqvYIwBLXzQ",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-auth-token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

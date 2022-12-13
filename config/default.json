@@ -1,7 +1,4 @@
 {
-    "db":{
-        "host":"mongodb://localhost:27017/productivitybook",
-        "remotehost":"mongodb+srv://goutham:hellohello@pbinstance.l6fak.mongodb.net/ProductivityBook?retryWrites=true&w=majority"
-    },
-    "tokenLife":"1440m"
+    "name":"ProductivityBook Backend",
+    "port":3003
 }
